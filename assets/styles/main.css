@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 30px 80px;
+}
+
+h2, h3, h4{
+    color: #00a2c6;
+    margin-top: auto;
+}
+
+header{
+    display: inline;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 115px;
+    background-image: url("../images/background.png");
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
+.mariMulai{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    background: #7cc576;
+    text-decoration: none;
+    border-style: none;
+}
+
+.mariMulai:hover{
+    background: #fff;
+    color: #7cc576;
+    text-decoration: none;
+}
+
+.sub{
+    color: #aeaeae;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav{
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.centerLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+#content{
+    float: left;
+    width: 70%;
+}
+
+.judul{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.featured-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+.left{
+    width: 45%;
+}
+
+.right{
+    float: right;
+    width: 55%;
+    padding: 0 0 30px 30px;
+}
+
+.center{
+    text-align: center;
+}
+
+.imagePenuh{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: 0 0 20px 0;
+}
+
+@media only screen and (min-width: 2000px){
+    #content, aside, .left, .right{
+        width: 100%;
+        padding: 0;
+    }
+
+    .imagePenuh{
+        padding: 0 0 40px 0;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #content, aside, .left, .right{
+        width: 100%;
+        padding: 0;
+    }
+
+    .jumbotron{
+        font-size: 20px;
+        padding: 100px;
+    }
+
+    .logo{
+        margin-top: auto;
+        width: 200px;
+    }
+
+    .mariMulai{
+        margin-bottom: auto;
+    }
+
+    .card{
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    .container{
+        margin: 0px;
+    }
+
+    h2, h3, h4{
+        margin-top: 15px;
+    }
+
+    .imagePenuh{
+        padding: 0 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .jumbotron{
+        font-size: 18px;
+        padding: 50px;
+    }
+
+    .logo{
+        margin-top: auto;
+        width: 150px;
+    }
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
